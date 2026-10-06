@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "itembind",
+  "version": "1.0.0",
+  "name": "ItemBind",
+  "description": "Bind items to keys: swap to main hand, use, swap back",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.itembind.ItemBindClient"]
+  },
+  "mixins": [
+    { "config": "itembind.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
